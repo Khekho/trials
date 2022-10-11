@@ -1,0 +1,23 @@
+#include<iostream.h>
+#include<conio.h>
+int main(){
+int staff,stu=0,nstaff,tot;
+cout<<"enter the total no of users: ";
+cin>>tot;
+cout<<"enter the no of staff user :";
+cin>>staff;
+if(tot>0){
+if(tot>staff){
+nstaff=int(staff/3);
+stu=tot-(staff+nstaff);
+cout<<"The total number of student users: "<<stu;
+}
+else{
+cout<<"invalid!!!"<<"\n check the inputs";}
+}
+else{
+cout<<"invalid!!!"<<"\n check the inputs";}
+getch();
+clrscr();
+return 0;
+}
