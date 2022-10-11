@@ -1,0 +1,97 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+class shape{
+	public:
+	 shape(){
+		cout<<"This is a shape. \n";
+	}
+};
+class polygon : public shape{
+	public:
+		polygon(){
+			cout<<"Polygon is a shape. \n";
+	}
+};
+class rectangle : public shape{
+	public: 	
+		 rectangle(){
+			cout<<"Rectangle is a shape. \n";
+	}
+};
+class triangle : public shape{
+	public:
+	 triangle(){
+		cout<<"Triangle is a shape. \n";
+	}
+};
+class square : public shape{
+	public:
+	 square(){
+		cout<<"Square is a rectangle \n";
+	}
+};
+int main(){
+	polygon p;
+	rectangle r;
+	triangle t;
+	square s;
+	getch();
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+4
+
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+class RBI {
+	public:
+		RBI() {
+			cout << "RBI" << endl;
+		}
+};
+
+class SBI : public RBI {
+	public:
+		SBI() {
+			cout << "SBI" << endl;
+		}
+};
+
+class ICICI : public RBI {
+	public:
+		ICICI() {
+			cout << "ICICI" << endl;
+		}
+};
+
+class PNB : public RBI {
+	public:
+		PNB() {
+			cout << "PNB" << endl;
+		}
+};
+
+int main() {
+	SBI sbi;
+	ICICI icici;
+	PNB pnb;
+	return 0;
+}
