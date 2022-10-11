@@ -1,0 +1,26 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+	int m,n,step;
+	cout<<"Enter the start value: ";
+	cin>>m;
+	cout<<"Enter the stop value: ";
+	cin>>n;
+	cout<<"Enter the skipping value: ";
+	cin>>step;
+	step+=1;
+	if(step>=0 && m<=n){
+	
+	for (int i=m;i<=n;i+=step)
+	{
+		cout<<i<<"\t";
+	}}
+	else
+	{
+		cout<<"Invalid!!!";
+	}
+	getch();
+	return 0;
+}
